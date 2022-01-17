@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==========================================
+            Custom Styles
+================================================== */
+
+html {
+    font-size: 16px;
+    font-family: monospace;;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+h1 {
+    font-size: 176px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-size: 240px;
+    font-weight: bolder;
+    color: #F4AB2B;
+    text-shadow: -20px -20px 0px #4A2222;
+    text-align: left;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #F4AB2B;
+    line-height: 70px;
+}
+
+p {
+    margin: 1em;
+}
+
+.containter {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* --------------------------------------
+            Header
+-----------------------------------------*/
+
+/* Nav */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 15px;
+}
+
+.logo {
+    max-width: 30%;
+}
+
+nav a {
+    display: flex;
+}
+
+/* Menu Icon */
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+}
+
+.menu-btn-burger {
+    background: #F4AB2B;
+    width: 30px;
+    height: 3px;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #F4AB2B;
+    justify-content: center;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-8px) translateX(-15px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(8px) translateX(-15px);
+}
+
+/* Intro */
+
+.intro {
+    margin: 120px 65px;
+}
+
+.intro svg {
+    position: relative;
+}
+
+.intro svg:first-child {
+    margin: -40px -145px;
+}
+
+.intro svg:nth-child(2) {
+    margin: -240px 0 0 58px;
+}
+
+.intro svg:nth-child(3) {
+    margin: -200px 0 0 -160px;
+}
+
+.intro svg:last-child {
+    margin: -190px 0 0 120px;
+}
+
+/* Quote */
+
+.quote {
+    margin: 1000px auto;
+    line-height: 180px;
+}
+
+.quote-light-yellow {
+    color: #F5EEC4;
+    margin: 0 10px -10px 0;
+}
+
+.quote-brown {
+    color: #582417;
+    margin: -550px 30px 0 0;
+}
+
+.quote-orange {
+    color: #F4AB2B;
+    margin: -550px 0 0 0;
+}
+
+/*  */
+
